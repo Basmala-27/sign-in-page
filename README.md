@@ -72,6 +72,8 @@ Click on Google/Twitter/Facebook buttons:
 Opens the respective website in the browser.
 
 📷 Screens
+
+
 <img width="392" height="822" alt="image" src="https://github.com/user-attachments/assets/8102f72a-59bb-417d-b706-1a153fb89686" />
 
 
