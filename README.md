@@ -1,89 +1,69 @@
-Sign Up Android App
-📱 Overview
-This is a simple Android application built with Kotlin and ConstraintLayout.
+# 📱 Sign Up Android App
+
+## Overview
+This is a simple Android application built with **Kotlin** and **ConstraintLayout**.  
+
 The app allows users to:
+- Enter a username and password
+- Confirm password
+- Sign up (with validation)
+- Open external links (Google, Twitter, Facebook)
 
-Enter a username and password
+---
 
-Confirm password
+## ✨ Features
+- Custom **UI** using `ConstraintLayout`
+- **EditText** fields with custom drawable background
+- Password confirmation validation with Toast messages
+- External links buttons:
+  - Google
+  - Twitter (X)
+  - Facebook
 
-Sign up (with validation)
+---
 
-Open external links (Google, Twitter, Facebook)
+## 🛠 Tech Stack
+- **Language:** Kotlin  
+- **IDE:** Android Studio  
+- **UI:** XML Layout + ViewBinding  
 
-The app is designed with a clean UI and basic navigation for beginners learning Android development.
+---
 
-✨ Features
-Custom UI using ConstraintLayout
+## Project Structure
 
-EditText fields with custom background
+- **activity_main.xml** – Defines the UI layout (ImageView, TextViews, EditTexts, Buttons)
+- **MainActivity.kt** – Handles:
+  - Button click listeners
+  - Password validation
+  - Opening URLs with `Intent`
 
-Password confirmation check
+---
 
-Buttons to open external links:
+## 📷 Screens
 
-Google
+<img width="392" height="822" alt="image" src="https://github.com/user-attachments/assets/2f9e645e-f8a3-487f-89dc-da7836bef3dd" />
 
-Twitter (X)
-
-Facebook
-
-Toast messages for validation feedback
-
-🛠 Tech Stack
-Language: Kotlin
-
-IDE: Android Studio
-
-UI: XML Layout with ConstraintLayout
-
-Architecture: Single Activity
-
-📂 Project Structure
-activity_main.xml
-Contains the UI layout:
-
-ImageView, TextView, EditText, and Button.
-
-MainActivity.kt
-Handles:
-
-Button click listeners
-
-Password confirmation validation
-
-Opening URLs using Intent
-
-🚀 How It Works
-User enters:
-
-Username
-
-Password
-
-Confirm Password
-
-Click Sign Up:
-
-If passwords don’t match → Show a Toast message.
-
-Click on Google/Twitter/Facebook buttons:
-
-Opens the respective website in the browser.
-
-📷 Screens
+---
 
 
-<img width="392" height="822" alt="image" src="https://github.com/user-attachments/assets/8102f72a-59bb-417d-b706-1a153fb89686" />
+## 🚀 How It Works
+1. User enters:
+   - Username
+   - Password
+   - Confirm Password
+2. Click **Sign Up**:
+   - If passwords don’t match → Show a Toast message
+3. Click on social buttons:
+   - Opens the respective website in the browser
 
+---
 
-🔮 Future Improvements
-Add Firebase authentication.
+## Future Improvements
+- Add Firebase Authentication
+- Add advanced form validations (email format, password strength)
+- Enhance UI with Material Design components
 
-Add form validations (email format, password strength).
+---
 
-Improve UI with Material Design.
-
-👩‍💻 Author
-Developed by Basmala Mohamed
-
+## Author
+Developed by **Basmala Mohamed**
