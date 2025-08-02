@@ -14,13 +14,15 @@ import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity  : AppCompatActivity (){
     private lateinit var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        val pass = binding.edtPass
-        val cmfpass = binding.edtConfpass
+     binding = ActivityMainBinding.inflate(layoutInflater)
+       setContentView(binding.root)
+        val pass = binding.edtPass.text.toString()
+        val cmfpass = binding.edtConfpass.text.toString()
+
 
 
         binding.btmSignup.setOnClickListener {
@@ -29,6 +31,10 @@ class MainActivity  : AppCompatActivity (){
            {
                Toast.makeText(this, "Confirm password and password are differant", Toast.LENGTH_LONG).show()
 
+           }
+            else
+           {
+               Toast.makeText(this, "Signed in successfully", Toast.LENGTH_LONG).show()
            }
         }
 
